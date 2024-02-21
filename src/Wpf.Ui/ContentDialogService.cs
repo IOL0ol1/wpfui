@@ -52,7 +52,7 @@ public class ContentDialogService : IContentDialogService
     }
 
     /// <inheritdoc/>
-    public Task<ContentDialogResult> ShowAsync(ContentDialog dialog, CancellationToken cancellationToken)
+    public Task<ContentDialogResult> ShowAsync(ContentDialog dialog, CancellationToken cancellationToken = default)
     {
         if (_contentPresenter is null)
         {
